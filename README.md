@@ -35,7 +35,7 @@ collate_function(batch)重新封装batch
 
 
 ###
-其他的修改都在src/models/architectures/transformer.py \
+其他的修改都在src/models/architectures/transformer.py 
 
 Encoder_TRANSFORMER里面
 
@@ -58,7 +58,7 @@ cat两个action(也就是y1,, y2)的sigma_token
 
 line 124 \
 xseq = torch.cat((mix_muquery[None], mix_sigmaquery[None], x), axis=0) \
-cat mu_token, sigma_token和x(输入的video, 维度是60*24*512)给transformer
+cat mu_token, sigma_token和x(输入的video, 维度是60*24 *512)给transformer
 
 
 Decoder_TRANSFORMER里面
